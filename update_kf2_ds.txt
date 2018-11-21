@@ -1,0 +1,13 @@
+// update_kf2_ds.txt
+// https://wiki.tripwireinteractive.com/index.php?title=Dedicated_Server_%28Killing_Floor_2%29
+login anonymous
+force_install_dir ./kf2server
+// app_update 232130 validate
+
+// real beta
+// app_update 232130 -beta beta validate
+
+// experimental
+app_update 232130 -beta preview validate
+
+// exit

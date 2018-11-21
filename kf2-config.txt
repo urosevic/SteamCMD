@@ -1,0 +1,34 @@
+1. PORTS TO OPEN
+----------------------------------------------------------------------------------------------- 
+7707 UDP/IP (Game Port)
+7708 UDP/IP (Query Port)
+7717 UDP/IP (GameSpy Query Port)
+28852 TCP/IP and UDP (Allows your Server to Connect to the Master Server Browser)
+8075 TCP/IP (Port set via ListenPort that your WebAdmin will run on)
+20560 UDP/IP (Steam Port)
+
+LENGTH
+------------------------------------------------------------------------------------------------
+(Web admin > Defaults > Game > set difficulty & game length > Change/ Reset Map)
+however if you still want the command it is
+
+[KFMod.KFGameType]
+KFGameLength=2
+
+0 for short (4 waves)
+1 for medium (7 waves)
+2 for long (10 waves)
+3 for custom (for sandbox)
+
+DIFFICULTY
+------------------------------------------------------------------------------------------------
+Open the configuration file PCServer-KFGame.ini located in /killingfloor2/KFGame/Config
+Find the line stating GameDifficulty=0
+The value 0 may be changed one of the values listed below:
+0 - Normal
+1 - Hard
+2 - Suicidal
+3 - Hell on earth
+Save the file
+Start the server
+KF-ZedLanding?Difficulty=3.0000?GameLength=2?game=KFGameContent.KFGameInfo_Survival?GamePassword=ValarMorghulis
